@@ -367,7 +367,7 @@ $(document).ready(function(){
   </div>
   <!--/ Intro Skew End /-->
 
-  <section id="about" class="about-mf sect-pt4 route">
+  <span itemscope itemtype="http://schema.org/Article"></span><section id="about" class="about-mf sect-pt4 route">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -377,12 +377,12 @@ $(document).ready(function(){
                 <div class="row">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="img/pic4.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      <img itemprop="image" src="img/pic4.jpg" class="img-fluid rounded b-shadow-a" alt="">
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
-                      <p><span class="title-s">Name: </span> <span>Zaid Shaikh</span></p>
+                      <p><span class="title-s">Name: </span> <span itemprop="name">Zaid Shaikh</span></p>
                       <p><span class="title-s">Email: </span> <span>16mscit072@gmail.com</span></p>
                       <p><span class="title-s">Phone: </span> <span>9099943197</span></p>
                     </div>
@@ -469,7 +469,12 @@ $(document).ready(function(){
 
                     <br>
 
-                    <p class="lead">Hi, my name is zaid shaikh.I live in Surat and my portfolio is a representation of all that I've learned and accomplished as a computer science student.</p>
+                    <p class="lead">Hi, my name is
+                      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">zaid shaikh</span>
+                    </span>
+                      .I live in Surat and my portfolio is a representation of all that I've learned and accomplished as a 
+                      <span itemprop="articleSection">computer science </span> student.</p>
 
 
                     <p class="lead">I graduated in 2019 with a bachelor’s degree in Information Technology(B.SC.IT) and currently live in Pune, Maharashtra and pursuing my master's degree in Computer Science.To secure and maintain a challenging position in a reputed organization so that I can expand my learnings, knowledge, and skills and to maintain a responsible career opportunity so that I can fully utilize my training and skills.
@@ -514,7 +519,7 @@ $(document).ready(function(){
 	      </div>
       
       
-      <div class="row">
+      <div itemprop="articleBody" class="row">
 
 
 		        <div class="col-md-4">
@@ -613,6 +618,10 @@ $(document).ready(function(){
       </div>
     </div>
   </section>
+  <meta itemprop="url" content="https://zaidshaikh007.github.io/resume/">
+<span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<meta itemprop="name" content="github"></span>
+<meta itemprop="datePublished" content="2019-01-01"></span>
   <!--/ Section Services End /-->
 
 
